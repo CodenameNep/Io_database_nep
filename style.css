@@ -251,14 +251,16 @@ ul li {
   list-style: none;
 }
 
-.social a {
-  color: #ffffff;        
-  font-size: 22px;
-  transition: 0.2s ease;
+.social-icon{
+  width:22px;
+  height:22px;
+  object-fit:contain;
+  transition:0.2s ease;
 }
 
-.social a:hover {
-  color: #ffd700;
+.social-icon:hover{
+  transform:scale(1.15);
+  filter:brightness(1.2);
 }
 
 .video-container {
