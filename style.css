@@ -224,7 +224,7 @@ ul li {
   transition: 0.2s ease;
 }
 
-.games-grid img:hover{
+.games-grid a img:hover{
   transform: scale(1.02);
 }
 
