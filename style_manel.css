@@ -189,15 +189,6 @@ body {
   transition: 0.3s ease;
 }
 
-/* NOVA IMAGEM VERTICAL */
-.vertical-img {
-  width: 100%;
-  max-height: 250px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin: 20px 0;
-}
-
 /* TEXTOS */
 h1, h2 {
   color: #ffffff;
@@ -308,3 +299,4 @@ ul li {
   font-family:monospace;
   font-size:0.9rem;
 }
+
