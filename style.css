@@ -11,7 +11,7 @@ body {
   font-family: Arial, sans-serif;
   color: #e3f2fd;
   min-height: 100vh;
-  background-image: url("./img/iobg.jpg");
+  background-image: url("./img/votvbg.png");
   background-size: cover;
   background-position: center;
 }
@@ -20,9 +20,9 @@ body {
 .navbar {
   width: 100%;
   padding: 15px 30px;
-  background: rgba(10, 30, 60, 0.85);
-  border-bottom: 1px solid rgba(80, 170, 255, 0.25);
-  color: #4fc3f7;
+  background: rgba(0, 0, 0, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
   font-weight: bold;
   font-family: monospace;
   letter-spacing: 1px;
@@ -73,7 +73,7 @@ body {
   left: -100%;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #00f0ff, transparent);
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
   animation: navNeonMove 3s linear infinite;
 }
 
@@ -87,7 +87,7 @@ body {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(5, 25, 55, 0.85);
+  background-color: rgba(0, 0, 0, 0.65);
   z-index: -1;
 }
 
@@ -152,8 +152,8 @@ body {
 
 /* CARD */
 .card {
-  background: rgba(15, 40, 75, 0.75);
-  border: 1px solid rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgb(0, 42, 255);
   border-radius: 20px;
   padding: 25px;
 
@@ -282,8 +282,8 @@ ul li {
 .footer{
   width:100%;
   padding:15px 30px;
-  background:rgba(10,30,60,0.85);
-  border-top:1px solid rgba(80,170,255,0.25);
+  background:rgba(0, 0, 0, 0.85);
+  border-top:1px solid rgba(255, 255, 255, 0.25);
 
   display:flex;
   justify-content:flex-end; /* joga o texto para a direita */
@@ -296,7 +296,7 @@ ul li {
 }
 
 .footer p{
-  color:#4fc3f7;
+  color:#ffffff;
   font-family:monospace;
   font-size:0.9rem;
 
