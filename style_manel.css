@@ -222,10 +222,10 @@ ul li {
   border-radius: 15px;
   object-fit: cover;
   height: 160px;
-  transition: 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
-.games-grid img:hover{
+.games-grid a:hover img {
   transform: scale(1.02);
 }
 
