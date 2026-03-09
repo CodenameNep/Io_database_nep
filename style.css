@@ -303,3 +303,11 @@ ul li {
   font-family:monospace;
   font-size:0.9rem;
 }
+
+.footer p{
+  color:#4fc3f7;
+  font-family:monospace;
+  font-size:0.9rem;
+
+  text-shadow:0 0 6px #4fc3f7;
+}
