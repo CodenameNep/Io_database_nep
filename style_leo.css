@@ -21,7 +21,6 @@ body {
   width: 100%;
   padding: 15px 30px;
   background: rgba(0, 0, 0, 0.85);
-  border-bottom: 1px solid rgba(80, 170, 255, 0.25);
   color: #bb0f0f;
   font-weight: bold;
   font-family: monospace;
@@ -230,21 +229,6 @@ ul li {
   border-radius: 15px;
   object-fit: cover;
   height: 160px;
-}
-
-/*GRID DAS MUSICAS*/
-.music-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.music-grid img {
-  width: 100%;
-  border-radius: 15px;
-  object-fit: cover;
-  height: 240px;
 }
 
 @media (max-width: 900px) {
