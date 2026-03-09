@@ -1,3 +1,4 @@
+
 /* RESET */
 * {
   margin: 0;
@@ -263,16 +264,6 @@ ul li {
   filter:brightness(1.2);
 }
 
-.video-container {
-  margin-top: 20px;
-}
-
-.video-container video {
-  width: 100%;
-  border-radius: 15px;
-  outline: none;
-}
-
 /* GALERIA */
 .gallery {
   margin-top: 25px;
@@ -297,3 +288,18 @@ ul li {
   transform: scale(1.05);
 }
 
+.footer{
+  width:100%;
+  padding:15px 30px;
+  background:rgba(10,30,60,0.85);
+  border-top:1px solid rgba(80,170,255,0.25);
+
+  display:flex;
+  justify-content:flex-end; /* joga o texto para a direita */
+}
+
+.footer p{
+  color:#4fc3f7;
+  font-family:monospace;
+  font-size:0.9rem;
+}
