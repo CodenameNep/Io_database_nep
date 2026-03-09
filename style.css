@@ -21,7 +21,6 @@ body {
   width: 100%;
   padding: 15px 30px;
   background: rgba(0, 0, 0, 0.85);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
   font-weight: bold;
   font-family: monospace;
@@ -73,7 +72,7 @@ body {
   left: -100%;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+  background: linear-gradient(90deg, transparent, #4134ff, transparent);
   animation: navNeonMove 3s linear infinite;
 }
 
@@ -153,13 +152,13 @@ body {
 /* CARD */
 .card {
   background: rgba(0, 0, 0, 0.75);
-  border: 1px solid rgb(0, 42, 255);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 20px;
   padding: 25px;
 
   /* GLOW */
   box-shadow:
-    0 0 8px rgba(79, 195, 247, 0.4),
+    0 0 8px rgba(255, 255, 255, 0.4),
     0 0 18px rgba(79, 195, 247, 0.25);
   
   transition: 0.3s ease;
@@ -283,23 +282,15 @@ ul li {
   width:100%;
   padding:15px 30px;
   background:rgba(0, 0, 0, 0.85);
-  border-top:1px solid rgba(255, 255, 255, 0.25);
+  border-top:1px solid rgba(0, 34, 255, 0.25);
 
   display:flex;
   justify-content:flex-end; /* joga o texto para a direita */
 }
 
 .footer p{
-  color:#4fc3f7;
-  font-family:monospace;
-  font-size:0.9rem;
-}
-
-.footer p{
   color:#ffffff;
   font-family:monospace;
   font-size:0.9rem;
-
-  text-shadow:0 0 6px #4fc3f7;
 }
 
