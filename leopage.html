@@ -22,6 +22,16 @@
   <div class="nav-neon-line"></div>
 </nav>
 
+<div class="music-control">
+
+<button id="playPause">
+<i class="fa-solid fa-pause"></i>
+</button>
+
+<input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+
+</div>
+
 <div class="overlay"></div>
 
 <main class="layout">
@@ -31,7 +41,7 @@
       <img src="img/leozin.webp" class="avatar" alt="Avatar">
       <h1>Leozin</h1>
       <p class="subtitle">AKA: _Games</p>
-      <p class="subtitle">"!ESCREVER DESC AQUI!"</p>
+      <p class="subtitle">"Aura_Farm4tron3000 or something like that"</p>
 
     <ul class="social">
        <li><a href="https://steamcommunity.com/profiles/76561198820366875"><img src="img/steam.png" class="social-icon"></a></li>
@@ -105,26 +115,48 @@
 <section class="card">
   <h2>About me</h2>
 
-<p>TEXTO AQUI</p>
-<p>TEXTO AQUI</p>
-<p>TEXTO AQUI</p>
-<p>TEXTO AQUI</p>
-<p>TEXTO AQUI</p>
+<p>Joined to server in 2004</p>
+<p>Nerd (games, movies and comics)</p>
+<p>Job needer</p>
 
 </section>
 
 <section class="card">
-  <h2>Music I fuck with</h2>
+  <h2>Musics</h2>
 
 <div class="games-grid">
 
-  <img src="img/blank.webp" alt="Musica 1">
+  <img src="img/leozin/_image.webp" alt="Musica 1">
 
-  <img src="img/blank.webp" alt="Musica 2">
+  <img src="img/leozin/ozzy03.webp" alt="Musica 2">
+
+<iframe 
+style="border-radius:12px" 
+src="https://open.spotify.com/embed/track/4YtuhhgpKwckVZNGzjpxBh?utm_source=generator&theme=0"
+width="100%" 
+height="60%" 
+frameBorder="0" 
+allowfullscreen="" 
+loading="lazy">
+</iframe>
+
+<iframe
+style="border-radius:12px"
+src="https://open.spotify.com/embed/track/0LagWpYHMaQjbCeAIoOKVg?utm_source=generator&theme=0"
+width="100%"
+height="60%"
+frameborder="0"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+<img src="img/leozin/img-1043003-billy-idol.jpg" alt="Musica 3">
+
+  <img src="img/leozin/59061708013013.avif" alt="Musica 4">
   
 <iframe
 style="border-radius:12px"
-src="https://open.spotify.com/embed/track/"
+src="https://open.spotify.com/embed/track/4TIJ7zSBNejpoIPaWpWRKc?utm_source=generator"
 width="100%"
 height="60%"
 frameborder="0"
@@ -134,31 +166,7 @@ loading="lazy">
 
 <iframe
 style="border-radius:12px"
-src="https://open.spotify.com/embed/track/"
-width="100%"
-height="60%"
-frameborder="0"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-<img src="img/blank.webp" alt="Musica 3">
-
-  <img src="img/blank.webp" alt="Musica 4">
-  
-<iframe
-style="border-radius:12px"
-src="https://open.spotify.com/embed/track/"
-width="100%"
-height="60%"
-frameborder="0"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-<iframe
-style="border-radius:12px"
-src="https://open.spotify.com/embed/track/"
+src="https://open.spotify.com/embed/track/0uAkm1iQLrzweZ4U1iXy6w?utm_source=generator"
 width="100%"
 height="60%"
 frameborder="0"
@@ -176,6 +184,44 @@ loading="lazy">
 <footer class="footer">
   <p>[REDACTED] IO Database</p>
 </footer>
+
+<audio id="bgMusic" loop>
+  <source src="audio/music_leozin.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function removeBlur() {
+
+  document.getElementById('pageContent').classList.remove('blur-active');
+  document.getElementById('blurOverlay').classList.add('hidden');
+
+  const music = document.getElementById("bgMusic");
+  music.volume = 1; // volume inicial
+  music.play();
+
+}
+
+const music = document.getElementById("bgMusic");
+const playPause = document.getElementById("playPause");
+const volumeSlider = document.getElementById("volumeSlider");
+
+playPause.addEventListener("click", () => {
+
+  if(music.paused){
+    music.play();
+    playPause.innerHTML = '<i class="fa-solid fa-pause"></i>';
+  } else {
+    music.pause();
+    playPause.innerHTML = '<i class="fa-solid fa-play"></i>';
+  }
+
+});
+
+volumeSlider.addEventListener("input", () => {
+  music.volume = volumeSlider.value;
+});
+
+</script>
 
 </body>
 </html>
