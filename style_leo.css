@@ -306,3 +306,54 @@ ul li {
   font-family:monospace;
   font-size:0.9rem;
 }
+
+.music-control{
+
+  position: sticky;
+  top: 70px; /* altura da navbar */
+
+  margin-left:20px;
+  margin-top:15px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  padding:8px 8px;
+
+  border-radius:5px;
+
+  background:rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+
+  border:1px solid rgba(255, 255, 255, 0.4);
+
+  box-shadow:
+  0 0 8px rgba(255, 255, 255, 0.5);
+
+  width:fit-content;
+}
+
+.music-control button{
+
+  background:transparent;
+  border:1px solid #ffffff;
+  color:#ffffff;
+
+  padding:4px 10px;
+
+  border-radius:2px;
+}
+
+.music-control button:hover{
+
+  background:#ffffff;
+  color:black;
+
+  box-shadow:0 0 10px #effaff;
+}
+
+#volumeSlider{
+
+  width:90px;
+}
