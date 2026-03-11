@@ -10,6 +10,15 @@
 </head>
 <body>
 
+<!--O BORRO-->
+<div class="blur-overlay" id="blurOverlay" onclick="removeBlur()">
+  <p>Welcome to the IO Database.</p>
+  <p class="subtitle-text">Click anywhere to proceed</p>
+</div>
+
+<div id="pageContent" class="blur-active">
+<!--O FIM DO O BORRO-->
+
 <nav class="navbar">
   <div class="nav-left">
     IO_DataBase>Creds>Agents>LSS.Games>Info
@@ -28,7 +37,7 @@
 <i class="fa-solid fa-pause"></i>
 </button>
 
-<input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+<input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.25">
 
 </div>
 
@@ -185,6 +194,8 @@ loading="lazy">
   <p>[REDACTED] IO Database</p>
 </footer>
 
+</div>
+
 <audio id="bgMusic" loop>
   <source src="audio/music_leozin.mp3" type="audio/mpeg">
 </audio>
@@ -196,7 +207,7 @@ function removeBlur() {
   document.getElementById('blurOverlay').classList.add('hidden');
 
   const music = document.getElementById("bgMusic");
-  music.volume = 1; // volume inicial
+  music.volume = 0.25; // volume inicial
   music.play();
 
 }
