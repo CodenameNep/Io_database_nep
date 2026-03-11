@@ -13,7 +13,7 @@
 
 <!--O BORRO-->
 <div class="blur-overlay" id="blurOverlay" onclick="removeBlur()">
-  <p>ACCESS IO_DataBase</p>
+  <p>Welcome to the IO Database.</p>
   <p class="subtitle-text">Click anywhere to proceed</p>
 </div>
 
@@ -40,7 +40,7 @@
 <i class="fa-solid fa-pause"></i>
 </button>
 
-<input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+<input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.25">
 
 </div>
 <!--Fim do tocador-->
@@ -58,10 +58,10 @@
 You don't even realize that you are trapped"</p>
 
     <ul class="social">
-       <li><a href="https://www.youtube.com/@codenamenep8364"><img src="img/yt.png" class="social-icon"></a></li>
-       <li><a href="https://x.com/TheCodenameNep"><img src="img/tw.png" class="social-icon"></a></li>
-       <li><a href="https://steamcommunity.com/id/codenamenep/"><img src="img/steam.png" class="social-icon"></a></li>
-       <li><a href="https://www.roblox.com/users/121283659/profile"><img src="img/robrox.png" class="social-icon"></a></li>
+       <li><a target="_blank" href="https://www.youtube.com/@codenamenep8364"><img src="img/yt.png" class="social-icon"></a></li>
+       <li><a target="_blank" href="https://x.com/TheCodenameNep"><img src="img/tw.png" class="social-icon"></a></li>
+       <li><a target="_blank" href="https://steamcommunity.com/id/codenamenep/"><img src="img/steam.png" class="social-icon"></a></li>
+       <li><a target="_blank" href="https://www.roblox.com/users/121283659/profile"><img src="img/robrox.png" class="social-icon"></a></li>
     </ul>
     </section>
 
@@ -122,10 +122,10 @@ You don't even realize that you are trapped"</p>
       <h2>Favorite games</h2>
 
       <div class="games-grid">
-        <a href="https://www.nintendo.com/pt-pt/Diversos/Pokemon-Ultra-Sun-e-Pokemon-Ultra-Moon-1298959.html?srsltid=AfmBOoqdTSlGOhjVtA_bjVb4lQ0iqNuoyzw-053ZX4c1M5mnuAmYl4nj"><img src="img/pkmn.avif" alt="Jogo 1"></a>
-        <a href="https://www.nintendo.com/pt-br/store/products/the-legend-of-zelda-breath-of-the-wild-switch/?srsltid=AfmBOor28SwJnhZkpytdmkYm6PGgc2LXesJTHAwcaYz9ieUtj9wZh6Wa"><img src="img/botw.webp" alt="Jogo 2"></a>
-        <a href="https://store.steampowered.com/app/1671210/DELTARUNE/"><img src="img/deltarune.webp" alt="Jogo 3"></a>
-        <a href="https://store.steampowered.com/app/3764200/Resident_Evil_Requiem/"><img src="img/Re.jpg" alt="Jogo 4"></a>
+        <a target="_blank" href="https://www.nintendo.com/pt-pt/Diversos/Pokemon-Ultra-Sun-e-Pokemon-Ultra-Moon-1298959.html?srsltid=AfmBOoqdTSlGOhjVtA_bjVb4lQ0iqNuoyzw-053ZX4c1M5mnuAmYl4nj"><img src="img/pkmn.avif" alt="Jogo 1"></a>
+        <a target="_blank" href="https://www.nintendo.com/pt-br/store/products/the-legend-of-zelda-breath-of-the-wild-switch/?srsltid=AfmBOor28SwJnhZkpytdmkYm6PGgc2LXesJTHAwcaYz9ieUtj9wZh6Wa"><img src="img/botw.webp" alt="Jogo 2"></a>
+        <a target="_blank" href="https://store.steampowered.com/app/1671210/DELTARUNE/"><img src="img/deltarune.webp" alt="Jogo 3"></a>
+        <a target="_blank" href="https://store.steampowered.com/app/3764200/Resident_Evil_Requiem/"><img src="img/Re.jpg" alt="Jogo 4"></a>
       </div>
     </section>
 
@@ -220,7 +220,7 @@ function removeBlur() {
   document.getElementById('blurOverlay').classList.add('hidden');
 
   const music = document.getElementById("bgMusic");
-  music.volume = 1; // volume inicial
+  music.volume = 0.25; // volume inicial
   music.play();
 
 }
