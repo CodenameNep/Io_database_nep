@@ -10,17 +10,39 @@
 </head>
 <body>
 
-<nav class="navbar">
+<!--O BORRO-->
+<div class="blur-overlay" id="blurOverlay" onclick="removeBlur()">
+  <p>Welcome to the IO Database.</p>
+  <p class="subtitle-text">Click anywhere to proceed</p>
+</div>
+
+<div id="pageContent" class="blur-active">
+<!--O FIM DO O BORRO-->
+  <nav class="navbar">
   <div class="nav-left">
-    IO_DataBase>Creds>Agents>MGSC.Doom>Info
+    IO_DataBase>Creds>Agents>LSM.Nep>Info
   </div>
+
 
   <div class="nav-right">
     <span class="agent-text">IO_Agent</span>
     <img src="img/default.jpg" alt="Avatar" class="nav-avatar">
   </div>
   <div class="nav-neon-line"></div>
+
 </nav>
+
+<!--isso é o tocador-->
+<div class="music-control">
+
+<button id="playPause">
+<i class="fa-solid fa-pause"></i>
+</button>
+
+<input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.25">
+
+</div>
+<!--Fim do tocador-->
 
 <div class="overlay"></div>
 
@@ -174,6 +196,48 @@ loading="lazy">
 <footer class="footer">
   <p>[REDACTED] IO Database</p>
 </footer>
+
+<!--Bagui da música-->
+
+<audio id="bgMusic" loop>
+  <source src="audio/music_manel.mp3" type="audio/mpeg">
+</audio>
+
+<!--SCRIPTS-->
+
+<script>
+function removeBlur() {
+
+  document.getElementById('pageContent').classList.remove('blur-active');
+  document.getElementById('blurOverlay').classList.add('hidden');
+
+  const music = document.getElementById("bgMusic");
+  music.volume = 0.25; // volume inicial
+  music.play();
+
+}
+
+const music = document.getElementById("bgMusic");
+const playPause = document.getElementById("playPause");
+const volumeSlider = document.getElementById("volumeSlider");
+
+playPause.addEventListener("click", () => {
+
+  if(music.paused){
+    music.play();
+    playPause.innerHTML = '<i class="fa-solid fa-pause"></i>';
+  } else {
+    music.pause();
+    playPause.innerHTML = '<i class="fa-solid fa-play"></i>';
+  }
+
+});
+
+volumeSlider.addEventListener("input", () => {
+  music.volume = volumeSlider.value;
+});
+
+</script>
 
 </body>
 </html>
