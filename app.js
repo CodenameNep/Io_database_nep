@@ -82,6 +82,22 @@
       footerText: '#ffffff',
       musicBorder: 'rgba(255, 255, 255, 0.4)',
       musicGlow: 'rgba(255, 255, 255, 0.5)'
+    },
+         charles: {
+      background: './img/charles/charlesbg.png',
+      text: '#ffffff',
+      accent: '#b700ff',
+      subtitle: '#ffffff',
+      cardBorder: '#ff00ff',
+      neon: '#ff00f2',
+      overlay: 'transparent',
+      cardBg: 'rgb(0, 0, 0, 0.8)',
+      glow1: 'rgba(255, 0, 255, 0.4)',
+      glow2: 'rgba(234, 0, 255, 0.25)',
+      footerBorder: '#ff00f2',
+      footerText: '#ffffff',
+      musicBorder: 'rgba(248, 45, 255, 0.4)',
+      musicGlow: 'rgba(255, 0, 191, 0.5)'
     }
   };
 
