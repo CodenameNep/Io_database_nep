@@ -2,19 +2,21 @@
 (function () {
   const themes = {
     nep: {
-      background: './img/starbg.jpg',
+      bottomNav: '#eb9bff',
+      texture: './img/rain.gif',
+      background: './img/garden2.png',
       text: '#ffffff',
       accent: 'hsl(293, 100%, 73%)',
       subtitle: '#ffffff',
       cardBorder: 'rgb(255, 0, 255)',
-      neon: '#e270ff',
+      neon: '#7e1e96',
       overlay: 'rgba(0, 0, 0, 0.65)',
-      cardBg: 'rgba(0, 0, 0, 0.75)',
+      cardBg: 'rgba(0, 0, 0, 0.90)',
       glow1: 'rgba(217, 92, 255, 0.4)',
       glow2: 'rgba(208, 108, 255, 0.25)',
       footerBorder: 'rgb(235, 136, 255)',
       footerText: '#ffffff',
-      musicBorder: 'rgb(234, 0, 255)',
+      musicBorder: '#eb9bff',
       musicGlow: 'rgba(255, 164, 243, 0.5)'
     },
     manel: {
@@ -85,6 +87,8 @@
 
   function setTheme(theme) {
     const root = document.documentElement;
+    root.style.setProperty('--navcolor', theme.bottomNav);
+    root.style.setProperty('--page-tex', `url("${theme.texture}")`);
     root.style.setProperty('--page-bg', `url("${theme.background}")`);
     root.style.setProperty('--text-color', theme.text);
     root.style.setProperty('--accent-color', theme.accent);
