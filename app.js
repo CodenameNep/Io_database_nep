@@ -1,4 +1,3 @@
-// Tema único controlado por JS — inspirado no projeto neo, sem recriar a estrutura das páginas.
 (function () {
   const themes = {
     nep: {
