@@ -83,7 +83,7 @@
       musicBorder: 'rgba(255, 255, 255, 0.4)',
       musicGlow: 'rgba(255, 255, 255, 0.5)'
     },
-         charles: {
+      charles: {
       background: './img/charles/charlesbg.png',
       text: '#ffffff',
       accent: '#b700ff',
@@ -95,6 +95,22 @@
       glow1: 'rgba(255, 0, 255, 0.4)',
       glow2: 'rgba(234, 0, 255, 0.25)',
       footerBorder: '#ff00f2',
+      footerText: '#ffffff',
+      musicBorder: 'rgba(248, 45, 255, 0.4)',
+      musicGlow: 'rgba(255, 0, 191, 0.5)'
+    },
+      betone: {
+      background: './img/betone/betonebg.png',
+      text: '#ffffff',
+      accent: '#4c00ff',
+      subtitle: '#ffffff',
+      cardBorder: '#4c00ff',
+      neon: '#8c00ff',
+      overlay: 'transparent',
+      cardBg: 'rgb(0, 0, 0, 0.8)',
+      glow1: 'rgba(132, 0, 255, 0.4)',
+      glow2: 'rgba(140, 0, 255, 0.25)',
+      footerBorder: '#4c00ff',
       footerText: '#ffffff',
       musicBorder: 'rgba(248, 45, 255, 0.4)',
       musicGlow: 'rgba(255, 0, 191, 0.5)'
