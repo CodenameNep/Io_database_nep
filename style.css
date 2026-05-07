@@ -301,10 +301,6 @@ ul li {
 }
 
 /* GALERIA */
-.gallery {
-  margin-top: 25px;
-}
-
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -312,9 +308,14 @@ ul li {
   margin-top: 15px;
 }
 
+.gallery-grid a,
+.gallery-grid img {
+  display: block;
+}
+
 .gallery-grid img {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 12px;
   transition: 0.3s ease;
@@ -322,6 +323,18 @@ ul li {
 
 .gallery-grid img:hover {
   transform: scale(1.05);
+}
+
+/* Se tiver ímpar*/
+.gallery-grid > :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc((100% - 10px) / 2);
+}
+
+/* Quando tiver apenas 1 imagem */
+.gallery-grid:has(> :only-child) > :only-child {
+  width: min(260px, 100%);
 }
 
 .footer{
